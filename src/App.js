@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Main from "./components/Main";
+import SwitchBtn from "./components/SwitchBtn";
+import SocialBtns from "./components/SocialBtns";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <main className="page-wrapper">
+                <div className=" main-bg-scene ">
+                    <header className="header">
+                        <nav className="navbar  d-flex justify-content-end ">
+                            <SocialBtns />
+                        </nav>
+                    </header>
+                    <SwitchBtn />
+                    <Main />
+                </div>
+            </main>
+            {/* <div className="container-fluid vh-1001 position-relative1 main-con">
+            <div className="row ">                
+                
+            </div>
+        </div> */}
+        </>
+    );
 }
 
 export default App;
