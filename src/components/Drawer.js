@@ -5,7 +5,8 @@ import { gsap } from "gsap";
 const Drawer = () => {
 
     function boxClick(e) {        
-        const imagePath = e.path[1];
+        const path = e.path || e.composedPath();
+        const imagePath = path[1];
         if(!imagePath.classList.contains('cabinet-box'))
             return false
             imagePath.classList.remove('cabinet-box')
@@ -25,8 +26,8 @@ const Drawer = () => {
     }
 
     useEffect(() => {
-        const cabinetEl = document.querySelector('.svg-cabinet')        
-        cabinetEl.addEventListener('click',(e) => {boxClick(e)});
+        const cabinetEl = document.querySelector('.svg-cabinet')
+        cabinetEl.addEventListener('click',(e) => {boxClick(e)},true);
       return () => {
         return () => cabinetEl.removeEventListener('click', boxClick);
       }
