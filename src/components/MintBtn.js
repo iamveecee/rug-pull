@@ -21,7 +21,11 @@ const MintBtn = () => {
         mintAnimation();
     }, []);
 
-    return <MintBtnAnim />;
+    return (
+        <div className="mint-btn">
+            <MintBtnAnim />
+        </div>
+    );
 };
 
 export default MintBtn;

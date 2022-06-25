@@ -19,7 +19,7 @@ const HeadingSection = () => {
     };
 
     useEffect(() => {
-         headingAnimation();
+        headingAnimation();
     }, []);
 
     return (
@@ -28,7 +28,7 @@ const HeadingSection = () => {
                 <div className="main-heading">
                     <HeadingSVG />
                 </div>
-                <div className="mint-btn">
+                <div className="mint-btn-wrapper">
                     <MintBtn />
                 </div>
             </div>

@@ -1,93 +1,156 @@
+/* body.bg-light-on {
+    background: radial-gradient();
+} */
+div {
+    /* outline: dotted red; */
+}
 .page-wrapper {
     flex: 1 0 auto;
-}
-.navbar-floating {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.header {
-    padding: 10px 150px;
-}
-
-.main-con {
-    /* overflow: hidden; */
     background-color: black;
 }
+.main-bg-scene-wrapper {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
 
+.bg-light-anim {
+    /* border: 2px solid green; */
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    /* background-image: url("../public/images/light-on-with-bulb-2.png");
+    background-size: cover; */
+}
+.bg-light-flyer {
+    filter: blur(24px);
+    -webkit-filter: blur(24px);
+    -moz-filter: blur(24px);
+    -o-filter: blur(24px);
+    -ms-filter: blur(24px);
+}
+.bulb-spark{
+    filter: blur(14px);
+    -webkit-filter: blur(14px);
+    -moz-filter: blur(14px);
+    -o-filter: blur(14px);
+    -ms-filter: blur(14px);
+}
+
+.light-animation-svg.bulb-active .bg-light-flyer,
+.light-animation-svg.bulb-active .bulb-spark {
+    display: block !important;
+}
+
+.bg-light-on .system-wrapper {
+    clip-path: none
+}
+.bg-light-on .main-bg-scene-wrapper{
+    background-image: url("../public/images/bg-gost.png");
+    background-size: cover;
+    background-position: bottom;
+}
 .bg-light-on .social-icon-container {
-  opacity: 1;
-  
+    opacity: 1;
 }
-.bg-light-on .main-bg-scene{
-  background-image: url("../public/images/bg-on.png") !important;
+
+.bg-light-on .lead-heading,
+.bg-light-on .workspace-container .drawer {
+    opacity: 1;
+    visibility: visible;
 }
-.bg-light-on .drawer-container{
-  opacity: 1;
-  visibility: visible;
+
+
+.header {
+    padding: 10px 4%;
 }
-.drawer-container{
-  opacity: 0;
-  visibility: hidden;
+.navbar {
+    justify-content: end;
 }
 
 .social-icon-container {
     opacity: 0;
     display: flex;
-    gap: 30px;
-}
-.social-icon-wrapper {
-    display: flex;
-    position: relative;
+    justify-content: flex-end;
+    z-index: 12;
 }
 
-.social-icon-wrapper:hover .social-btn:last-child {
-    opacity: 1;
+.social-icon-wrapper {
+    width: 35%;
+}
+.social-icon-wrapper:first-child {
+    margin-right: 30px;
+}
+.social-icon-wrapper .social-btn:first-child {
+    display: block;
+}
+.social-icon-wrapper .social-btn:last-child {
+    display: none;
 }
 .social-icon-wrapper:hover .social-btn:first-child {
-    opacity: 0;
+    display: none;
 }
-.social-btn:last-child {
-    position: absolute;
-    opacity: 0;
+.social-icon-wrapper:hover .social-btn:last-child {
+    display: block;
+}
+.social-btn img {
+    width: 100%;
 }
 
 .heading-container {
     position: relative;
-    top: -120px;
+    top: -65px;
 }
-.mint-btn {
-    width: 377px;
-    height: 106px;
+.mint-btn-wrapper {
     position: relative;
-    left: 138px;
-    bottom: 255px;
+    width: 377px;
+    top: -260px;
+    margin-left: 145px;
+    z-index: 20;
+    width: 35%;
+}
+.mint-btn,
+.bg-bulb-string {
+    cursor: pointer;
 }
 .main-heading {
-    width: calc(100% - -20px);
-    height: 100%;
-}
-
-.main-bg-scene {
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    display: block;
+}
+.lead-heading {
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+.workspace-container {
+    margin-top: -440px;
     position: relative;
-    /* position: absolute; */
-    background-image: url("../public/images/bg-off.jpg");
+    left: 80px;
+    z-index: 12;
+    /* opacity: 0;
+    visibility: hidden; */
 }
-.gapper{
-  height: 200px;
+.workspace-container .drawer{
+    opacity: 0;
+    visibility: hidden;
 }
+.system-wrapper {
+    width: 100%;
+    height: 81%;
+    display: flex;
+    justify-content: end;
+    z-index: 5;
+    clip-path: ellipse(20% 32% at 74% 19%);
+}
+
 
 .switch-btn {
     position: absolute;
-    /* position: relative; */
-    /* background: transparent;   */
-    /* background: red; */
     width: 120px;
     height: 120px;
     z-index: 3;
@@ -95,21 +158,112 @@
     top: calc(30% - 119px);
 }
 
-.front-side {
-    width: 471px;
-    height: 380px;
-    position: relative;
-    left: 425px;
-    top: 200px;
-}
 .box-container {
     display: flex;
     flex-direction: column;
-    padding-top: 35px;
-}
-.drawer-box {
-    color: red;
+    position: relative;
     width: 100%;
-    height: 84px;
-    border: 1px solid rebeccapurple;
+    height: 100%;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .social-icon-wrapper {
+        margin-left: 15px;
+    }
+    .social-icon-wrapper .social-btn {
+        width: 62px;
+        height: 62px;
+    }
+
+    .heading-container {
+        top: 70px;
+    }
+    .main-heading {
+        width: 100%;
+        transform: scale(1.12);
+    }
+    .header {
+        padding: 0;
+    }
+    .navbar {
+        justify-content: start;
+    }
+    .mint-btn {
+        left: 0;
+        height: 75px;
+        bottom: 100px;
+    }
+
+    .system-wrapper {
+        transform: translate(-37%, 95%);
+        width: 110%;
+        top: 19%;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .system-wrapper {
+        height: 49%;
+    }
+    .heading-container {
+        top: -100px;
+    }
+    .main-heading {
+        width: 80%;
+    }
+    .mint-btn-wrapper {
+        top: -170px;
+        margin-left: 160px;
+        width: 26%;
+    }
+    .workspace-container {
+        left: -106px;
+        margin-top: -317px;
+    }
+    .box-container {
+        width: 57%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1440.1px) {
+    .system-wrapper img {
+        /* width: 100%; */
+    }
+    .box-container {
+        width: 61%;
+    }
+    .lead-heading {
+        margin-top: -75px;
+    }
+
+    .heading-container {
+        top: 0px;
+    }
+    .main-heading {
+        width: 89%;
+    }
+    .workspace-container {
+        margin-top: -300px;
+        left: 40px;
+    }
+    .mint-btn-wrapper {
+        top: -225px;
+        width: 28%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
 }
