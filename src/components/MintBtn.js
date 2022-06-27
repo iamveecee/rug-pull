@@ -1,27 +1,18 @@
 import React, { useEffect } from "react";
-import { ReactComponent as MintBtnAnim } from "../assets/mintBtn.svg";
-import { gsap } from "gsap";
+import Lottie from "react-lottie-player";
+import mintLottie from "../assets/mint-btn.json";
 
 const MintBtn = () => {
-    const mintAnimation = () => {
-        const mintText = document.querySelectorAll(".mint-btn-text");
-        gsap.to(mintText, {
-            repeat: -1,
-            display: "none",
-            stagger: {
-                each: 0.1,
-                onComplete: function () {
-                    this.targets()[0].style.display = "block";
-                },
-            },
-        });
-    };
-
-    useEffect(() => {
-        mintAnimation();
-    }, []);
-
-    return <MintBtnAnim />;
+    return (
+        <Lottie
+            className="mint-btn"
+            // loop={false}
+            loop
+            animationData={mintLottie}
+            play
+            speed={1}
+        />
+    );
 };
 
 export default MintBtn;

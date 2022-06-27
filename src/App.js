@@ -9,7 +9,7 @@ function App() {
             <main className="page-wrapper">
                 <div className=" main-bg-scene ">
                     <header className="header">
-                        <nav className="navbar  d-flex justify-content-end ">
+                        <nav className="navbar d-flex">
                             <SocialBtns />
                         </nav>
                     </header>

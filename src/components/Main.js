@@ -10,7 +10,7 @@ const Main = () => {
                     <div className="col-md-6 col-12">
                         <HeadingSection />
                     </div>
-                    <div className="col-md-6 col-12">
+                    <div className="col-md-6 col-12 d-flex drawer-wrapper">
                         <Drawer />
                     </div>
                 </div>
