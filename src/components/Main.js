@@ -7,10 +7,10 @@ const Main = () => {
         
             <div className="container-fluid drawer-container">
                 <div className="row">
-                    <div className="col-md-6 col-12">
+                    <div className="col-md-6 col-12 heading-section">
                         <HeadingSection />
                     </div>
-                    <div className="col-md-6 col-12 d-flex drawer-wrapper">
+                    <div className="col-md-6 col-12 drawer-wrapper">
                         <Drawer />
                     </div>
                 </div>
