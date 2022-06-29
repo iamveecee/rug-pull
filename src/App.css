@@ -1,6 +1,9 @@
 div {
     /* outline: 2px dotted red; */
 }
+body{
+    background-color: black;
+}
 .page-wrapper {
     flex: 1 0 auto;
 }
@@ -16,7 +19,7 @@ div {
     opacity: 1;
 }
 .bg-light-on .main-bg-scene {
-    background-image: url("../public/images/bg-on.png") !important;
+    /* background-image: url("../public/images/bg-on.png") !important; */
 }
 .bg-light-on .drawer-container {
     opacity: 1;
@@ -86,7 +89,7 @@ div {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../public/images/bg-off.png");
+    /* background-image: url("../public/images/bg-off.png"); */
     background-position: top;
     overflow: hidden;
 }
@@ -293,4 +296,30 @@ div {
         height: 36%;
         left: 56%;
     }
+}
+
+
+/* Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .drawer-wrapper .drawer-container .box-container {
+  top: 224px;
+  width: 88%;
+  left: 200px;
+  height: 110%;
+}
+
 }
