@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Lottie from "react-lottie-player";
 import headingLottie from "../assets/we-are-not.json";
 

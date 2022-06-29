@@ -6,25 +6,30 @@ import bgImgOff from "./assets/bg-off.png";
 
 function App() {
 
-    const mobileBgCSS = `@media (min-width: 320px) and (max-width: 767.98px)  {
+    const mobileBgCSS = `    
+    .bg-light-on .main-bg-scene  {
+        background-image: url("../images/bg-on.png");
+    }
+
+    .main-bg-scene {        
+        background-image: url("../images/bg-off.png");
+    }
+    @media (min-width: 320px) and (max-width: 767.98px)  {
         .bg-light-on .main-bg-scene  {
-            background-image: url("../public/images/bg-mobile-on.png");
+            background-image: url("../images/bg-mobile-on.png");
         }
     
         .main-bg-scene {        
-            background-image: url("../public/images/bg-mobile-off.png");
+            background-image: url("../images/bg-mobile-off.png");
         }
     }`;
 
-    const backgroundStyle = {
-        backgroundImage: `url(${bgImgOff})`,
-    }
     return (
         <>
         <style scoped>{mobileBgCSS}</style>
 
             <main className="page-wrapper">
-                <div className="main-bg-scene" style={backgroundStyle}>
+                <div className="main-bg-scene" >
                     <header className="header">
                         <nav className="navbar d-flex">
                             <SocialBtns/>
