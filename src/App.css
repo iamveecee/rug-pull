@@ -314,9 +314,10 @@ body{
   and (max-height: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
-    .bg-light-on .main-bg-scene {
+    .main-bg-scene {
         background-position: left 38% bottom 82%;
     }
+    
     .drawer-wrapper .drawer-container .box-container {
   top: 224px;
   width: 88%;
