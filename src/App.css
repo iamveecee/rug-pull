@@ -324,9 +324,12 @@ body {
 .mint-soon {
     position: relative;
     display: block;
-    top: -93px;
+    /* top: -93px;
     left: 39px;
-    width: 117%;
+    width: 117%; */
+    top: -34%;
+    width: 100%;
+    left:-108px;
 }
     .mint-btn {
         top: 45%;
