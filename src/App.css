@@ -1,5 +1,5 @@
 div {
-    outline: 2px dotted red;
+    /* outline: 2px dotted red; */
 }
 body {
     background-color: black;
@@ -142,12 +142,13 @@ body {
         margin-left: 0;
     }
     .heading-container .mint-btn-wrapper {
-        width: 65%;
-        top: -31%;
+        width: 70%;
+        top: -25%;
     }
     .drawer-container .box-container {
-        left: 41%;
-        width: 90%;
+        left: 35%;
+        width: 105%;
+        top: -61px;
     }
 }
 /* Mobile devices (landscape phones, 320px and up) */
@@ -181,11 +182,11 @@ body {
         display: flex;
     }
     .switch-btn {
-        height: 40%;
-        left: 78%;
+        height: 32%;
+        left: 70%;
     }
     .box-container {
-        top: -45%;
+        top: -30%;
         bottom: 0;
         left: 33%;
     }
@@ -249,14 +250,71 @@ body {
     }
 }
 
-@media (min-width: 1290.1px) and (max-width: 1366px) {
-    .drawer-container .box-container {
-        top: 82px;
-        width: 88%;
-        left: 151px;
-        height: 79%;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .col-md-6.drawer-wrapper .drawer-container .box-container {
+        top: 57px !important;
     }
 }
+
+
+
+
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: portrait) {
+    .page-wrapper .main-bg-scene {
+        background-position: left 60% bottom 54%;
+    }
+    .page-wrapper .main-bg-scene .switch-btn {
+        left: calc(60% - 86px) !important;
+    }
+
+    .col-md-6.drawer-wrapper .drawer-container .box-container {
+        top: -130px;
+        width: 115%;
+        left: 86px;
+        height: 265%;
+    }
+    .heading-container {
+        position: relative;
+        top: -74px;
+    }
+    .main-heading {
+        width: 190%;
+    }
+    .mint-btn {
+        top: -41px;
+        width: 90%;
+        left: 45px;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1023px) and (max-width: 1365px) and (orientation: landscape) {
+    .page-wrapper .main-bg-scene {
+        background-position: left 38% bottom 82%;
+    }
+    .main-bg-scene .switch-btn {
+        left: calc(60% - -24px);
+    }
+    .col-md-6.drawer-wrapper .drawer-container .box-container {
+        top: 75px;
+        width: 88%;
+        left: 200px;
+        height: 110%;
+    }
+    .main-heading {
+        width: calc(100% - -200px);
+    }
+    .mint-btn {
+    /*     top: 6%;
+        width: 85%; */
+        top: 45%;
+        width: 65%;
+    }
+}
+
+
 /* Large devices (desktops, 1200px and up) */
 @media (min-width: 1024.1px) and (max-width: 1440px) {
     .mint-btn {
@@ -264,10 +322,10 @@ body {
         width: 65%;
     }
     .box-container {
-        top: 223px;
-        width: 111%;
-        left: 70px;
-        height: 110%;
+        top: 100px;
+        width: 103%;
+        left: 107px;
+        height: 80%;
     }
     .main-bg-scene .switch-btn {
         height: 38%;
@@ -278,7 +336,7 @@ body {
 }
 
 /* Extra large devices (large desktops, 1400px and up) */
-@media (min-width: 1440.1px) {
+@media (min-width: 1440px) {
     .box-container {
         left: 162px;
         top: 196px;
@@ -298,36 +356,13 @@ body {
     }
 }
 
-/* Portrait */
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .page-wrapper .main-bg-scene {
-        background-position: left 60% bottom 54%;
-    }
-    .page-wrapper .main-bg-scene .switch-btn {
-        left: calc(60% - 86px) !important;
-    }
-
-    .col-md-6.drawer-wrapper .drawer-container .box-container {
-        top: 224px;
-        width: 100%;
-        left: 145px;
-        height: 265%;
-    }
-}
-
-/* Landscape */
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .page-wrapper .main-bg-scene {
-        background-position: left 38% bottom 82%;
-    }
-    .main-bg-scene .switch-btn {
-        left: calc(60% - -24px) !important;
-    }
-
-    .col-md-6.drawer-wrapper .drawer-container .box-container {
-        top: 224px;
+/* 
+@media (min-width: 1290.1px) and (max-width: 1366px) {
+    .drawer-container .box-container {
+        top: 82px;
         width: 88%;
-        left: 200px;
-        height: 110%;
+        left: 151px;
+        height: 79%;
     }
 }
+ */
