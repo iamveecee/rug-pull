@@ -314,15 +314,18 @@ body{
   and (max-height: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
-    .main-bg-scene {
+    .page-wrapper .main-bg-scene {
         background-position: left 38% bottom 82%;
     }
+    .main-bg-scene .switch-btn{
+        left: calc(60% - -24px) !important;
+    }
     
-    .drawer-wrapper .drawer-container .box-container {
-  top: 224px;
-  width: 88%;
-  left: 200px;
-  height: 110%;
-}
+    .col-md-6.drawer-wrapper .drawer-container .box-container {
+    top: 224px;
+    width: 88%;
+    left: 200px;
+    height: 110%;
+    }
 
 }
