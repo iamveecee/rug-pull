@@ -3,6 +3,7 @@ import Lottie from "react-lottie-player";
 import headingLottie from "../assets/we-are-not.json";
 
 import MintBtn from "./MintBtn";
+import MintSoon from "./MintSoon";
 
 const HeadingSection = () => {
     
@@ -19,7 +20,8 @@ const HeadingSection = () => {
                     />
                 </div>
                 <div className="mint-btn-wrapper">
-                    <MintBtn />
+                    <MintSoon />
+                    {/* <MintBtn /> */}
                 </div>
             </div>
         </>
