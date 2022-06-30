@@ -327,7 +327,7 @@ body {
     /* top: -93px;
     left: 39px;
     width: 117%; */
-    top: 0;
+    top: -34%;
     width: 100%;
     left:-108px;
 }
@@ -374,13 +374,16 @@ body {
     }
 }
 
-/* 
-@media (min-width: 1290.1px) and (max-width: 1366px) {
-    .drawer-container .box-container {
-        top: 82px;
-        width: 88%;
-        left: 151px;
-        height: 79%;
-    }
+@media only screen and (min-width: 1536px) { 
+    .mint-soon{
+    position: relative;
+    top: 0;
 }
- */
+.mint-btn-wrapper {
+    width: 46%;
+    height: 0;
+    position: relative;
+    left: 283px;
+    bottom: 629px;
+} 
+}
