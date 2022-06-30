@@ -1,5 +1,5 @@
 div {
-    /* outline: 2px dotted red; */
+    outline: 2px dotted red;
 }
 body {
     background-color: black;
@@ -190,6 +190,12 @@ body {
         bottom: 0;
         left: 33%;
     }
+    .mint-soon{
+        display: block;        
+        position: relative;
+        left: -60px;
+        top: -45px;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -250,18 +256,15 @@ body {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 1.5) {
     .col-md-6.drawer-wrapper .drawer-container .box-container {
         top: 57px !important;
     }
 }
 
 
-
-
-
 /* Portrait */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 1.5){
     .page-wrapper .main-bg-scene {
         background-position: left 60% bottom 54%;
     }
@@ -290,7 +293,7 @@ body {
 }
 
 /* Landscape */
-@media only screen and (min-width: 1023px) and (max-width: 1365px) and (orientation: landscape) {
+@media only screen and (min-width: 1023px) and (max-width: 1366px) and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 1.5) {
     .page-wrapper .main-bg-scene {
         background-position: left 38% bottom 82%;
     }
@@ -317,6 +320,7 @@ body {
 
 /* Large devices (desktops, 1200px and up) */
 @media (min-width: 1024.1px) and (max-width: 1440px) {
+    
     .mint-btn {
         top: 45%;
         width: 65%;
@@ -350,6 +354,14 @@ body {
     .box-container .svg-cabinet {
         /* transform: translate3d(0px, 62px, 0px) !important; */
     }
+    
+.mint-soon {
+    position: relative;
+    display: block;
+    top: -93px;
+    left: 39px;
+    width: 117%;
+}
     .main-bg-scene .switch-btn {
         height: 36%;
         left: 56%;
