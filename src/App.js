@@ -38,12 +38,7 @@ function App() {
                     <SwitchBtn />
                     <Main />
                 </div>
-            </main>
-            {/* <div className="container-fluid vh-1001 position-relative1 main-con">
-            <div className="row ">                
-                
-            </div>
-        </div> */}
+            </main>           
         </>
     );
 }

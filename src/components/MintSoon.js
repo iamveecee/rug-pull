@@ -10,7 +10,7 @@ const MintSoon = () => {
             loop
             animationData={MintSoonLottie}
             play
-            speed={5}
+            speed={1}
             
         />
     );
