@@ -19,6 +19,7 @@ const HeadingSection = () => {
                     />
                 </div>
                 <div className="mint-btn-wrapper">
+                    <div className="splash"></div>
                     <MintSoon />
                     {/* <MintBtn /> */}
                 </div>
