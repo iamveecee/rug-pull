@@ -6,16 +6,15 @@ import MintBtn from "./MintBtn";
 import MintSoon from "./MintSoon";
 
 const HeadingSection = () => {
-    
     return (
         <>
             <div className="heading-container">
                 <div className="main-heading-wrapper">
                     <Lottie
                         className="main-heading"
-                        loop                        
+                        loop={false}
                         animationData={headingLottie}
-                        play                        
+                        play
                     />
                 </div>
                 <div className="mint-btn-wrapper">

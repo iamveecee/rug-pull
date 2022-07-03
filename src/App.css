@@ -73,12 +73,6 @@ body {
     left: 138px;
     bottom: 255px; */
 }
-.mint-btn {
-    position: relative;
-    width: 65%;
-    cursor: pointer;
-}
-
 .main-heading {
     width: calc(100% - -20px);
     height: 100%;
@@ -154,7 +148,7 @@ body {
         margin-right: 20px;
     }
     .heading-container .main-heading {
-        width: 82%;
+        width: 100%;
         margin-left: 0;
     }
     .heading-container .mint-btn-wrapper {
@@ -165,6 +159,23 @@ body {
         left: 35%;
         width: 105%;
         top: -110px;
+    }
+}
+/* Mobile devices (Iphone XS, X, 13 mini) */
+@media (min-width: 320px) and (max-width: 812px) {
+    .drawer-container .box-container{
+        top: 110px;
+    }
+    .heading-container .main-heading{
+        width: 100%;
+    }
+    .mint-btn-wrapper .mint-soon{
+        top: 30px;
+    }
+    .mint-btn-wrapper .splash{
+        width: 70%;
+        height: 70%;
+        top: 140px;
     }
 }
 /* Mobile devices (landscape phones, 320px and up) */
@@ -281,20 +292,12 @@ body {
         left: 6%;
         top: 15px;
     }
-    .mint-btn {
-        width: 75%;
-        left: 20%;
-        top: -36%;
-    }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1024px) {
-    .mint-btn {
-        top: 100px;
-        width: 60%;
-        left: -82px;
-    }
+    
     .switch-btn {
         height: 32%;
         left: calc(60% - 30px);
@@ -348,13 +351,7 @@ body {
         position: relative;
         left: 44%;
         top: 32px;
-    }
-    .mint-btn {
-        width: 30%;
-        position: relative;
-        left: 44%;
-        top: 32px;
-    }
+    }    
 }
 
 /* Ipad 9 Landscape */
@@ -372,11 +369,7 @@ body {
     }
     .main-heading {
         width: 120%;
-    }
-    .mint-btn {
-        top: 45%;
-        width: 65%;
-    }
+    }   
     .mint-soon {
         width: 38%;
         position: relative;
@@ -471,11 +464,7 @@ body {
         top: -34%;
         width: 100%;
         left: -108px;
-    }
-    .mint-btn {
-        top: 45%;
-        width: 65%;
-    }
+    }   
     .box-container {
         top: 100px;
         width: 103%;
@@ -496,19 +485,12 @@ body {
         left: 162px;
         top: 196px;
         height: 85%;
-    }
-    .mint-btn {
-        width: 90%;
-        top: -26%;
-        left: 17%;
-    }
+    }    
     .mint-soon {
         position: relative;
         top: -92%;
     }
-    .box-container .svg-cabinet {
-        /* transform: translate3d(0px, 62px, 0px) !important; */
-    }
+  
     .main-bg-scene .switch-btn {
         height: 36%;
         left: 56%;
@@ -519,8 +501,9 @@ body {
     .main-heading {
         width: 90%;
     }
-    .box-container {
-        height: 130%;
+    .col-md-6.drawer-wrapper .drawer-container .box-container {
+        height: 120%;
+        top:36%
     }
     .mint-soon {
         position: relative;
