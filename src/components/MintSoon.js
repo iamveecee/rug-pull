@@ -6,7 +6,7 @@ const MintSoon = () => {
     return (
         <Lottie
             className="mint-soon"
-            loop={false}
+            loop
             animationData={MintSoonLottie}
             play
             speed={1}

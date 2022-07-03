@@ -12,7 +12,7 @@ const HeadingSection = () => {
                 <div className="main-heading-wrapper">
                     <Lottie
                         className="main-heading"
-                        loop={false}
+                        loop
                         animationData={headingLottie}
                         play
                     />

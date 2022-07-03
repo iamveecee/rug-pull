@@ -6,7 +6,6 @@ const MintBtn = () => {
     return (
         <Lottie
             className="mint-btn"
-            // loop={false}
             loop
             animationData={mintLottie}
             play
