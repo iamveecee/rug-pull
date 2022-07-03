@@ -591,4 +591,11 @@ body {
     }
 }
 
-
+@media only screen and (min-width: 2560px) and (max-height: 1440px) and (orientation: landscape) {
+    .col-md-6.drawer-wrapper .drawer-container .box-container {
+        height: 120%;
+        top: 69%;
+        height: 150%;
+        left: 200px;
+    }
+}
