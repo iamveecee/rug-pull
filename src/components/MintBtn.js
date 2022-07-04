@@ -5,6 +5,7 @@ import mintLottie from "../assets/mint-btn.json";
 const MintBtn = () => {
     return (
         <Lottie
+            key={new Date()}
             className="mint-btn"
             loop
             animationData={mintLottie}

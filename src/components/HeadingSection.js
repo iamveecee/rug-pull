@@ -10,7 +10,7 @@ const HeadingSection = () => {
         <>
             <div className="heading-container">
                 <div className="main-heading-wrapper">
-                    <Lottie
+                    <Lottie key={new Date()}
                         className="main-heading"
                         loop
                         animationData={headingLottie}
@@ -19,8 +19,8 @@ const HeadingSection = () => {
                 </div>
                 <div className="mint-btn-wrapper">
                     <div className="splash"></div>
-                    <MintSoon />
-                    {/* <MintBtn /> */}
+                    <MintSoon key={new Date()} />
+                    {/* <MintBtn key={new Date()} /> */}
                 </div>
             </div>
         </>

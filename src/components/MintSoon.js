@@ -5,6 +5,7 @@ import MintSoonLottie from "../assets/mint-soon.json";
 const MintSoon = () => {
     return (
         <Lottie
+            key={new Date()}
             className="mint-soon"
             loop
             animationData={MintSoonLottie}
