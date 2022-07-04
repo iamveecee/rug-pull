@@ -181,6 +181,28 @@ body {
         top: 140px;
     }
 }
+
+/* Mobile devices (Iphone 12 PRO max) */
+@media (min-width: 428px) and (max-height: 926px) and (orientation: portrait) {
+    .drawer-container .box-container{
+        top: 110px;
+    }
+    .heading-container .main-heading{
+        width: 100%;
+    }
+    .mint-btn-wrapper .mint-soon{
+        top: 30px;
+    }
+    .mint-btn-wrapper .mint-btn{
+        top: 30px;
+    }
+    .mint-btn-wrapper .splash{
+        width: 70%;
+        height: 70%;
+        top: 140px;
+    }
+}
+
 /* Mobile devices (landscape phones, 320px and up) */
 @media (min-width: 320px) and (max-width: 767.98px) {
     .navbar {
